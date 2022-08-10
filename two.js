@@ -1,12 +1,4 @@
-// window.addEventListener("load", () => {
-//     const params = (new URL(document.location)).searchParams;
-//     // console.log(params)
-//     const rec = params.get('');
-//     console.log(rec)
 
-//     // document.getElementById('toarea').innerHTML = rec;
-// })
-// // document.getElementById("toarea").innerHTML="helloww"
 
 var sessionString = sessionStorage.getItem("Array1");
 var arr2 = JSON.parse(sessionString);
