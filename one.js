@@ -37,7 +37,7 @@ please.addEventListener("change", () => {
 
     button.onclick = function () {
       sessionStorage.setItem("Array1", JSON.stringify(arr));
-      window.location.href = "/HTML PAGES/send.html";
+      window.location.href = "send.html";
     };
   };
 
