@@ -1,0 +1,138 @@
+.kya {
+  margin: 0;
+  width: 100%;
+  border: 1px solid #dedede;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+  background-color: white;
+}
+nav {
+  padding: 30px;
+  /* padding-right:40px; */
+}
+.lol {
+  font-size: 26px;
+}
+.haha {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(23, 186, 69);
+  width: 80px;
+  border-radius: 20px;
+}
+.info {
+  position: relative;
+  font-size: 1.2rem;
+  color: gray;
+}
+.data {
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  width: 69%;
+  height: 70%;
+  margin: auto;
+  padding: 2.8rem 1.8rem;
+  text-align: left;
+  border-radius: 20px;
+}
+.name {
+  font-size: 40px;
+  color: rgb(8, 189, 230);
+  /* color: rgb(19, 99, 136) !important; */
+}
+img {
+  height: 10rem;
+  width: 10rem;
+  display: block;
+  position: relative;
+  left: 40%;
+  margin-top: 5%;
+}
+.mimi {
+  position: relative;
+  top: 1.5em;
+  margin-left: 2%;
+}
+.mimi:hover {
+  transform: scale(1.15, 1.2);
+}
+
+@media (max-width: 998px) {
+  html {
+    font-size: 85%;
+  }
+  img {
+    height: 8rem;
+    width: 8rem;
+  }
+  .data {
+    padding: 2.2rem 1.5rem;
+    height: 40rem;
+  }
+  .mimi:hover {
+    transform: scale(1.15, 1.2);
+  }
+  .lol {
+    font-size: 20px;
+  }
+  .name {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 69%;
+  }
+  img {
+    height: 7rem;
+    width: 7rem;
+    top: 2%;
+  }
+  .mimi {
+    margin-bottom: 0.7rem;
+    margin-left: 0.3rem;
+  }
+  .data {
+    padding: 1.6rem 0.6rem;
+    height: 37rem;
+  }
+  .name {
+    font-size: 30px;
+  }
+  .lol {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 360px) {
+  html {
+    font-size: 55%;
+  }
+  img {
+    height: 6.5rem;
+    width: 6.5rem;
+  }
+  .mimi {
+    margin-bottom: 0.7rem;
+    margin-left: 0.3rem;
+  }
+  .data {
+    padding: 1.2rem 0.4rem;
+    height: 35rem;
+  }
+  .name {
+    font-size: 25px;
+  }
+  .lol {
+    font-size: 12px;
+  }
+  .haha {
+    width: 60px;
+  }
+}
+footer {
+  background-color: grey;
+  color: white;
+  position: relative;
+}

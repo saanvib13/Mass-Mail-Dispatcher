@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload your csv file</title>
+    <link rel="stylesheet" href="/CSS FILES/style4.css" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div>
+      <div class="container-fluid kya">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand lol" href="#">EXPOSYS DATA LABS</a>
+
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="haha btn btn-primary"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="haha btn btn-outline-dark"
+                aria-current="page"
+                href="index.html"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <form action="">
+      <label for="">Choose your CSV file</label>
+      <input type="file" id="file" accept=".csv" />
+    </form>
+    <div>
+      <table method="get">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div>
+      <button class="btn send"></button>
+    </div>
+
+    <script src="/JS FILES/one.js"></script>
+  </body>
+</html>
+
+<!-- REGULAR EXPRESSIONS -->
+<!-- 
+  var reg=/(anything in b/w will be the testing value)/
+  we'll take a string s;
+
+  1 exec() -> will return the array if reg is found in s else will return null
+  var res=reg.exec(s);
+
+  2. test() -> will return true or false
+  var res=reg.test(s)
+  if reg is present in s then it will return true else false.
+  
+  3. match() -> will result array of results or null
+  var res=s.match(reg);
+  console.log(res) ->res will be an array
+
+  4. search() -> will result the index of first occurrence else -1
+  var res=s.search(reg);
+  console.log(reg);
+
+  5. replace() ->will replace the old value with a new value.
+  var res=s.replace(reg,"saanvi"); -> will replace the first occurrence of reg in s with "saanvi"
+  -> if reg is global then it will replace all the occurrences of reg in s with "saanvi"
+
+  if reg is defined as reg= /value/g ->global
+  reg=/value/i  -> case insensitive
+  -->
+
+<!-- var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/; -->
+<!-- will not allow extra space and extra @ -->
+<!-- metacharacter symbols -->
+<!-- /^bla/ -> exp will match if the string STARTS with bla
+      /bla$/ -> exp will match if the string ENDS with bla
+      /bl.a/ -> matches any ONE character Eg: blha will match
+      /bl*a/ -> matches any 0 OR MANY characterS Eg: blhHfsta will match
+      /bl?a/ -> character that has ? after it is optional. ho bhi sakta h nahi bhi ho sakta Eg; bla wil match but bta will not
+                match
+      /b\*ass/-> *,.,$,^,? they are metacharacters. but if we want to check if these actual symbols are present in the string or
+                not, we have to use backslash(\) Eg: b*ass will match in this case and noone else
+  -->
+
+<!-- character sets [] -->
+<!-- reg=/sa[a-z]nvi/ -> any character from a-z will be accepted eg: sannvi is matched-->
+<!-- reg=/sa[abg]nvi/ will accept a or b or g. eg: saanvi is accepted but  saunvi is not -->
+<!-- reg=/sa[^tre]nvi -> will accept any character EXCEPT t, r or e Eg: saanvi accepted satnvi not/ -->
+
+<!-- MULTIPLE CHARACTER SETS CAN BE USED IN 1 REGULAR EXP -->
+
+<!-- QUANTIFIERS (checks no. of occurrences -->
+<!-- var reg=/sa{2}nvi/ -> will match if exactly 2 a -->
+<!-- var re=/sa{0,2}nvi/ -> will match if a occurs 0 or 1 or 2 times (range)-->
+
+<!-- GROUPINGS -->
+<!-- var reg=/(saa){2} ->> will matc if the string contains saa exactly 2 times in it/ -->
+
+<!-- SHORTHAND CHARACTER CLASSES -->
+<!-- \w -> word characters : _ or alphabets or numbers 
+        var reg=/\war/ will match if a single character followed by ar
+        var reg=/\w+ar/ will match with multiple word characters followed by ar-->
+<!-- \W -> Non word characters : except (_ or alphabets or numbers) 
+        var reg=/\War/ will match if a single non word character followed by ar
+        var reg=/\W+ar/ will match with multiple non word characters followed by ar -->
+<!-- \d -> for digit -->
+<!-- \d+ -> for multiple digits -->
+<!-- \D -> for non digit -->
+<!-- \D+ -> for multiple non digits -->
+
+<!-- \s -> to match whitespace -->
+<!-- \s+ -> to match one or multiple whitespaces -->
+<!-- \S -> to match non whitespace -->
+<!-- \S+ -> to match one or multiple non whitespaces -->
+
+<!-- \b -> word boundary checks whether a new word is starting after that or not
+    Eg: reg=/vi\b/ s=saanvi bhagat will match but saanvibhagat will not  -->
+
+<!-- ASSERTIONS -->
+<!-- var reg=/s(?=a)/ string must contain a after s -->
+<!-- var reg=/s(?!a)/ string must not contain a after s -->
+
+<!-- TSYgaX4nlEbpH2An5AQEI7v05Xb4YPTS -->
